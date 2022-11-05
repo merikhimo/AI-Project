@@ -1,7 +1,7 @@
 import { createHistoryRouter } from 'atomic-router';
 import { createBrowserHistory } from 'history';
 
-import { homeRoute } from '../pages';
+import { homeRoute } from '$pages';
 
 // Define routes
 export const routes = [{ path: '/', route: homeRoute }];
