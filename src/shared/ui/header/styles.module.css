@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(90%, 1000px);
+    height: 90px;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navLink,
+.logo {
+    color: var(--t_main);
+}
+
+.navLink {
+    text-decoration: none;
+    font: var(--font_sm);
+}

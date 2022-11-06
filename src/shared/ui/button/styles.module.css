@@ -1,0 +1,9 @@
+.button {
+    background: transparent;
+    border: var(--border_sm) solid var(--border_grey);
+    border-radius: 5px;
+    color: var(--t_main);
+    font: var(--font_sm);
+    padding: 10px 20px;
+    cursor: pointer;
+}
