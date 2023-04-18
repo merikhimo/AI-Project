@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>granger</title>
+        <style>
+            .uploadFile{
+                box-sizing: border-box;
+                position: absolute;
+                width: 400px;
+                height: 228px;
+                left: 334px;
+                top: 371px;
+                border: 1px solid #000000;
+            }
+            
+            .tipText {
+                position: absolute;
+                justify-content: center;
+                hyphens: auto;
+                word-wrap: auto;
+                width: 758.79px;
+                height: 420px;
+                left: 788px;
+                top: 300px;
+            }
+
+            .uploadContainer{
+                box-sizing: border-box;
+                position: absolute;
+                justify-content: center;
+                width: 1344px;
+                height: 744px;
+                left: 280px;
+                top: 200px;
+                background: #EBEBEB;
+                border: 1px solid #000000;
+            }
+
+            .sendBut{
+                box-sizing: border-box;
+                position: absolute;
+                width: 400px;
+                height: 54px;
+                left: 334px;
+                top: 658px;
+                background: #FFFFFF;
+                border: 1px solid #000000;
+            }
+
+            .fName{
+                box-sizing: border-box;
+                position: absolute;
+                width: 400px;
+                height: 54px;
+                left: 334px;
+                top: 604px;
+                background: #FFFFFF;
+                border: 1px solid #000000;
+            }
+
+            .logInBut{
+                box-sizing: border-box;
+                position: absolute;
+                width: 164px;
+                height: 66px;
+                left: 1631px;
+                top: 67px;
+                background: #EBEBEB;
+                border: 1px solid #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="uploadContainer"> <!-- в макете у тебя границы от края экрана, так что все отдельно -->
+        </div>
+        <div class="uploadFile"onclick="document.getElementById('fileInput').click()"> <!-- открываем файлик -->
+            <p1 style="text-align: center; font-family: Roboto, sans-serif; font-weight: bold; font-size: 20px;">Щелкните или перетащите файл в эту область для загрузки</p>
+           
+            <input id="fileInput" type="file" style="display:none;" onchange="uploadFile(this)">
+        </div>
+        <div class="tipText">
+            <p style="text-align: center; font-family: Roboto, sans-serif; font-weight: bold; font-size: 30px;">
+            Привет! Сейчас мы расскажем тебе как пользоваться нашим сервисом.
+            Здесь появится название заболевания, а также пару советов как помочь твоему растению.
+            </p>
+        </div>
+        <div class="sendBut" onclick="window.location.href='https://www.youtube.com'"> <!-- тут у тебя отправление на страничку с итогом -->
+        </div>
+        <div class="fName"> <!-- вывод названия файла !НЕ РАБОТАЕТ -->
+            <script>
+                function displayFileName() {
+                  const filInput = document.getElementById("fileInput");
+                  const fileName = document.getElementById("fileName");
+                
+                  const uploadedFile = filInput.files[0];
+                  fileName.textContent = uploadedFile.name;
+                }
+            </script>
+            <p id="fileName"></p>>
+        </div>
+    </body>
+</html>
